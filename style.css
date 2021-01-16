@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: 'Merriweather', serif; */
+    font-family: 'Montserrat', sans-serif;  
+    width:100vw;
+    overflow-x: hidden;
+}
+
+
+
+
+header{
+    height:75vh;
+    width:100%;
+}
+    header nav{
+        padding:15px 50px;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+        header nav h1{
+            font-family: 'Merriweather', serif;
+            font-size:22px;
+        }
+        header nav .menuBtn{
+            width:30px;
+            height:30px;
+            cursor: pointer;
+        }
+            header nav .menuBtn img{
+                width:100%;
+                height:100%;
+            }
+
+    header .headerMainSection{
+        width:100%;
+        height:100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+        header .headerMainSection > div{
+            width:45%;
+            margin:0 auto;
+            position:relative;
+        }
+            header .headerMainSection > div .header_Img_Container{
+                position: absolute;
+                top:50%;
+                transform: translateY(-50%);
+                left:50px;
+                width:300px;
+                height:350px;
+                background: url('Project_Imgs/images/HeaderImg.png');
+                background-size:cover;
+                background-position:center;
+            }
+            header .headerMainSection > div h2{
+                display: inline-block;
+                margin-left: 400px;
+                font-size: 45px;
+                font-weight:400;
+
+            }
+            header .headerMainSection > div h2 strong{
+                font-weight:900;
+            }
+            header .headerMainSection > div span{
+                text-align:right;
+                display:block;
+                background-color: #15d5b4;
+                font-size:37px;
+                padding:8px;
+            }
+
+
+
+
+section#whatIDo_Section{
+    width:100%;
+    background: url('Project_Imgs/images/christopher-gower-m_HRfLhgABo-unsplash.png');
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+}
+    section#whatIDo_Section .section_Context{
+        background:rgba(0,0,0,.8);
+        padding:80px 0;
+        color:#fff;
+        text-align: center;
+    }
+        section#whatIDo_Section .section_Context h2{
+            position: relative;;
+            color:#0fe0ba;
+            font-size:35px;
+            padding:10px 0;
+            
+        }
+        section#whatIDo_Section .section_Context h2::after{
+            position:absolute;
+            content:'';
+            bottom:0;
+            right:50%;
+            transform:translateX(50%);
+            width:85px;
+            height:2px;
+            background-color:#0fe0ba;
+        }
+        section#whatIDo_Section .jobs{
+            width:80%;
+            margin:35px auto;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+            section#whatIDo_Section .jobs .job{
+                width:30%;
+            }
+                section#whatIDo_Section .jobs .job h3{
+                    font-size:20px;
+                    padding-bottom:15px;
+                }
+                section#whatIDo_Section .jobs .job p{
+                    color:#999;
+                    line-height:1.5;
+                }
+        section#whatIDo_Section a{
+            display:inline-block;
+            text-decoration: none;
+            color:#000;
+            font-size:17px;
+            font-weight:600;
+            font-family: 'Montserrat', sans-serif;  
+            background-color:#0fe0ba;
+            margin-top:40px;
+            padding:10px 20px;
+        }
+
+
+
+section#whoIam{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:75vh;
+}
+
+    section#whoIam .section_context{
+        width:65%;
+        position: relative;
+    }
+        section#whoIam .section_context .imgContainer{
+            position:absolute;
+            top:50%;
+            right:50px;
+            transform:translateY(-50%);
+            width:280px;
+            height:350px;
+            background:url('Project_Imgs/images/eduardo-dutra-Kqjc3vvgl1k-unsplash.png');
+        }
+
+        section#whoIam .section_context h2{
+            font-size:40px;
+            font-weight:800;
+        }
+        section#whoIam .section_context span{
+            display:block;
+            margin:15px 0;
+            padding:15px;
+            background-color:#15d5b4;
+            font-size:20px;
+        }
+        section#whoIam .section_context p{
+            max-width:60%;
+            margin:25px 0;
+            color:#333;
+        }
+
+
+
+
+section#myWork{
+    width:100%;
+    height:90vh;
+    display:flex;
+    color: #fff;
+    background-color: #2E2E2E;
+    align-items: center;
+    justify-content: center;
+} 
+    section#myWork .section_Context{
+        width:75%;
+        margin:0 auto;
+        text-align: center;
+    }
+        section#myWork .section_Context h2{
+            font-size:35px;
+        }
+        section#myWork .section_Context span{
+            display:block;
+            margin:10px 0;
+            font-weight:700;
+            color:#15d5b4;
+            padding:7px 0;
+        }
+        section#myWork .section_Context .Galery_Container{
+            width:100%;
+            height:400px;
+            background:#fff;
+            display: grid;
+            grid-template-columns: repeat(5 ,1fr);
+            grid-template-rows: repeat(2 , 1fr);
+        }
+            section#myWork .section_Context .Galery_Container .galery_img:nth-child(1){
+                background:url('Project_Imgs/Images/Rectangle 3-1.png');
+            }
+            section#myWork .section_Context .Galery_Container .galery_img:nth-child(2){
+                background:url('Project_Imgs/Images/Rectangle 3-2.png');
+            }
+            section#myWork .section_Context .Galery_Container .galery_img:nth-child(3){
+                background:url('Project_Imgs/Images/Rectangle 3-3.png');
+            }
+            section#myWork .section_Context .Galery_Container .galery_img:nth-child(4){
+                background:url('Project_Imgs/Images/Rectangle 3-4.png');
+            }
+            section#myWork .section_Context .Galery_Container .galery_img:nth-child(5){
+                background:url('Project_Imgs/Images/Rectangle 3-5.png');
+            }
+            section#myWork .section_Context .Galery_Container .galery_img:nth-child(6){
+                background:url('Project_Imgs/Images/Rectangle 3-6.png');
+            }
+            section#myWork .section_Context .Galery_Container .galery_img:nth-child(7){
+                background:url('Project_Imgs/Images/Rectangle 3-7.png');
+            }
+            section#myWork .section_Context .Galery_Container .galery_img:nth-child(8){
+                background:url('Project_Imgs/Images/Rectangle 3-8.png');
+            }
+            section#myWork .section_Context .Galery_Container .galery_img:nth-child(9){
+                background:url('Project_Imgs/Images/Rectangle 3-9.png');
+            }
+            section#myWork .section_Context .Galery_Container .galery_img:nth-child(10){
+                background:url('Project_Imgs/Images/Rectangle 3-10.png');
+            }
+            section#myWork .section_Context .Galery_Container .galery_img:nth-of-type(n){
+                background-size: cover;
+                background-position:bottom;
+                background-repeat: no-repeat;
+            }
+footer{
+    width:100%;
+    padding:10px 0;
+    background:#0a0909;
+    text-align: center;
+}
+    footer .iconsWrapper{
+        width:50%;
+        margin:0 auto;
+    }
+    footer span{
+        display:block;
+        color:#fff;
+        padding:10px 0;
+        font-size:20px;
+    }
+        footer .iconsWrapper img{
+            height:30px;
+            filter:invert(.2);
+            padding:0 10px;
+        }
+           
